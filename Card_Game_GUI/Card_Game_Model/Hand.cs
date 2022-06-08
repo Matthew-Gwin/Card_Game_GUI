@@ -22,7 +22,7 @@ namespace Card_Game
         }
         public override String ToString()
         {
-            return String.Join(", ", base.ToString() + " | Score: " + this.Score());
+            return String.Join(", ", base.ToString()); //+ " | Score: " + this.Score());
         }
 
     }

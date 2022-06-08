@@ -28,8 +28,11 @@ namespace Card_Game_GUI
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
-            Card_Game.BlackJack game = Card_Game_Controller.BlackJackController.init();
-            Trace.WriteLine(game);
+            this.Hide();
+            Card_Game_Controller.GameSetupWindow nextWindow = new Card_Game_Controller.GameSetupWindow();
+            nextWindow.Show();
+            //Card_Game.BlackJack game = Card_Game_Controller.BlackJackController.new_game();
+            //Trace.WriteLine(game);
             //Trace.WriteLine("text");
 
 

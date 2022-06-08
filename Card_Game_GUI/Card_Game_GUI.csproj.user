@@ -7,6 +7,20 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Card_Game_Controller\GameSetupwindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Card_Game_Controller\PlayerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Card_Game_Controller\GameSetupwindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Card_Game_Controller\PlayerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -1,13 +1,13 @@
-C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.csproj.AssemblyReference.cache
-C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI_MarkupCompile.cache
-C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI_MarkupCompile.lref
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\bin\Debug\net6.0-windows\Card_Game_GUI.exe
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\bin\Debug\net6.0-windows\Card_Game_GUI.deps.json
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\bin\Debug\net6.0-windows\Card_Game_GUI.runtimeconfig.json
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\bin\Debug\net6.0-windows\Card_Game_GUI.dll
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\bin\Debug\net6.0-windows\Card_Game_GUI.pdb
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.csproj.AssemblyReference.cache
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI_MarkupCompile.cache
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI_MarkupCompile.lref
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.g.resources
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.GeneratedMSBuildEditorConfig.editorconfig
@@ -19,3 +19,7 @@ C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\ne
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.pdb
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_GUI.genruntimeconfig.cache
 C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\ref\Card_Game_GUI.dll
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_Controller\GameSetupwindow.g.cs
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_Controller\GameSetupwindow.baml
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_Controller\PlayerView.g.cs
+C:\Users\mg0522\source\repos\Matthew-Gwin\GUI_Sandbox\Card_Game_GUI\obj\Debug\net6.0-windows\Card_Game_Controller\PlayerView.baml
