@@ -6,7 +6,7 @@ namespace Card_Game
 {
     internal class Setup
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
 
             //Deck d = new Deck(true); //creates standard deck of size 52 
@@ -20,7 +20,7 @@ namespace Card_Game
             foreach (Card card in dmds)
             {
                 Console.WriteLine(card);
-            }*/
+            }
 
             Player matt = new Player("Matt");
             Player yasmeen = new Player("Yasmeen");
@@ -39,11 +39,11 @@ namespace Card_Game
             Console.WriteLine(test);
             test.Shuffle();
             Console.WriteLine("------------------------------------------");
-            Console.WriteLine(test); */
+            Console.WriteLine(test); 
 
             game.PlayGame();
             //game.Automatic_Play(matt);
             //Console.WriteLine("Hello World!");
-        }
+        }*/
     }
 }

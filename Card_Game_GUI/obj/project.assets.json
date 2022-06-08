@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\Card_Game_GUI\\Card_Game_GUI\\Card_Game_GUI\\Card_Game_GUI.csproj",
+      "projectUniqueName": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\GUI_Sandbox\\Card_Game_GUI\\Card_Game_GUI.csproj",
       "projectName": "Card_Game_GUI",
-      "projectPath": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\Card_Game_GUI\\Card_Game_GUI\\Card_Game_GUI\\Card_Game_GUI.csproj",
+      "projectPath": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\GUI_Sandbox\\Card_Game_GUI\\Card_Game_GUI.csproj",
       "packagesPath": "C:\\Users\\mg0522\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\Card_Game_GUI\\Card_Game_GUI\\Card_Game_GUI\\obj\\",
+      "outputPath": "C:\\Users\\mg0522\\source\\repos\\Matthew-Gwin\\GUI_Sandbox\\Card_Game_GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

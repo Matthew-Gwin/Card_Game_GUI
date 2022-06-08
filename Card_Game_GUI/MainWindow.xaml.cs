@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace Card_Game_GUI
 {
@@ -23,6 +24,15 @@ namespace Card_Game_GUI
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void start_Click(object sender, RoutedEventArgs e)
+        {
+            Card_Game.BlackJack game = Card_Game_Controller.BlackJackController.init();
+            Trace.WriteLine(game);
+            //Trace.WriteLine("text");
+
+
         }
     }
 }

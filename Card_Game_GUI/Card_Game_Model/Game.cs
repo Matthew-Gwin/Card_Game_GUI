@@ -32,5 +32,9 @@ namespace Card_Game
             Random rnd = new Random();
             return rnd.Next(0, 99999);
         }
+        public override String ToString()
+        {
+            return String.Join(",", this.players);
+        }
     }
 }
