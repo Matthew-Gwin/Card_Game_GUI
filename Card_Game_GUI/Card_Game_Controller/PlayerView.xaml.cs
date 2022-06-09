@@ -23,37 +23,41 @@ namespace Card_Game_GUI.Card_Game_Controller
     public partial class PlayerViewWindow : Window
     {
         public string name;
-        internal Card_Game.Player player; 
-        internal Card_Game.BlackJack game; //game player is part of
-        internal PlayerViewWindow(Card_Game.Player p, Card_Game.BlackJack g)
+        internal BlackJackUIPlayer player;
+        internal BlackJackUIGame UIGame;
+        //internal Card_Game.BlackJack game; //game player is part of
+        internal PlayerViewWindow(BlackJackUIPlayer Bp, BlackJackUIGame g)
         {
             InitializeComponent();
-            this.game = g;
-            this.player = p;
-            this.Title = p.name;
+            this.UIGame = g;
+            this.player = Bp;
+            this.Title = Bp.player.name;
             this.Hand.IsEnabled = false;
             this.Score.IsEnabled = false;
-            this.Hand.Text = p.hand.ToString();
-            this.Score.Text = p.hand.Score().ToString();
+            this.Hand.Text = Bp.player.hand.ToString();
+            this.Score.Text = Bp.player.hand.Score().ToString();
         }
+        
+        //This should all be implemented in the BlackJack game class
 
         private void GameHit(object sender, RoutedEventArgs e)
         {
-            Trace.WriteLine(player.name + " Hit!");
-            game.PlayerHit(player);
-            Trace.WriteLine(player.hand);
+            UIGame.UIHitPressed(player);
         }
 
         private void GameStand(object sender, RoutedEventArgs e)
-        {
-            return;
+        { 
+            UIGame.UIStandPressed(player);
         }
 
         private void GameLeave(object sender, RoutedEventArgs e)
         {
-            game.players.Remove(player.UID);
+            //UIGame.BpPlayers
+            //UIGame.players.Remove(player.UID);
+            UIGame.RemovePlayerFromGame(player);
             this.Close();
         }
+
     }
 
 }

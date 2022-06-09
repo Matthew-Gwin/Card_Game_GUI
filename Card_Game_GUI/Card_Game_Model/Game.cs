@@ -15,7 +15,6 @@ namespace Card_Game
 
         public void AddPlayer(Player p)
         {
-
             int UID = this.GenerateID();
             if (players.ContainsKey(UID)){
                 while (players.ContainsKey(UID))

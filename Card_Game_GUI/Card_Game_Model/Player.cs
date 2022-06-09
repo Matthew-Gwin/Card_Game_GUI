@@ -18,6 +18,14 @@ namespace Card_Game
             this.hand = new Hand();
             this.name = playerName;
         }
+
+        public Player()
+        {
+            this.isPlaying = true;
+            this.hand = new Hand();
+            this.name = "Player";
+        }
+
         public override String ToString()
         {
             return this.name + "'s Cards: " + this.hand.ToString();

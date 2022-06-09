@@ -23,23 +23,23 @@ namespace Card_Game_GUI.Card_Game_Controller
     public partial class GameSetupWindow : Window
     {
 
-        private List<Player> playerList;
-        private BlackJack game;
+        private List<BlackJackUIPlayer> playerList;
+        private BlackJackUIGame game;
 
         public GameSetupWindow()
         {
-            playerList = new List<Player>();
-            game = new BlackJack();
+            playerList = new List<BlackJackUIPlayer>();
+            game = new BlackJackUIGame(new BlackJack());
             InitializeComponent();
         }
-        private void ButtonAddName_Click(object sender, RoutedEventArgs e)
+        private void Button_Add_To_Game(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
             {
                 //Trace.WriteLine("Testing output");
                 lstNames.Items.Add(txtName.Text);
                 Trace.WriteLine("Adding " + txtName.Text + " to the game.");
-                playerList.Add(new Player(txtName.Text));
+                playerList.Add(new BlackJackUIPlayer(txtName.Text));
                 txtName.Clear();
             }
 
@@ -54,22 +54,26 @@ namespace Card_Game_GUI.Card_Game_Controller
                 Trace.WriteLine(warning);
                 return;
             }
-            //Card_Game.BlackJack game = Card_Game_Controller.BlackJackController.new_game();
-            //Card_Game.BlackJack game = new Card_Game.BlackJack();
-            foreach (Player player in playerList)
+            else
             {
-                game.AddPlayer(player);
+                this.game.UIPlayPressed();
             }
-            Trace.WriteLine(game);
+
+            foreach (BlackJackUIPlayer Bp in playerList)
+            {
+                game.BpPlayers.Add(Bp);
+            }
+            //Trace.WriteLine(game);
             //BlackJackGameWindow nextStep = new BlackJackGameWindow(game);
             this.Close();
             display_players();
+
             //nextStep.Show();
 
         }
         private void display_players()
         {
-            foreach (Player p in this.playerList)
+            foreach (BlackJackUIPlayer p in this.playerList)
             {
                 PlayerViewWindow pvw = new PlayerViewWindow(p, game);
                 pvw.Show();

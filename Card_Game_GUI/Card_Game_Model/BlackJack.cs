@@ -8,7 +8,6 @@ namespace Card_Game
     {
 
         private Deck gamecards;
-
         private Player dealer;
         public Dictionary<int, Player> out_of_round;
         
@@ -21,7 +20,7 @@ namespace Card_Game
             //Console.WriteLine(gamecards);
         }
 
-        public void PlayGame()
+        public virtual void PlayGame()
         {          
             for (int i = 0; i < 52; i++)
             {
