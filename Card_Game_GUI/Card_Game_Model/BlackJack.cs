@@ -37,13 +37,7 @@ namespace Card_Game
                 
                 foreach (Player p in this.players.Values)
                 {
-                    if (p.hand.cards.Count == 0)
-                    {
-                        for (int dealcount = 1; dealcount <= 2; dealcount++) //deal two cards to each player
-                        {
-                            p.hand.AddTo(gamecards.Deal());
-                        }
-                    }
+                    initial_deal(p);
                     if (p.name == "Dealer")
                     {
                         continue;
@@ -78,6 +72,21 @@ namespace Card_Game
             foreach (Player p in out_of_round.Values) //All players should be here when all either stand, bust, or have BlackJack.
             {    
                 Console.WriteLine(p.name + " Score: " + p.hand.Score());
+            }
+        }
+
+        public void initial_deal(Player p)
+        {
+            if (p.hand.cards.Count == 0)
+            {
+                for (int dealcount = 1; dealcount <= 2; dealcount++) //deal two cards to each player
+                {
+                    p.hand.AddTo(gamecards.Deal());
+                }
+            }
+            else
+            {
+                return;
             }
         }
 

@@ -22,9 +22,13 @@ namespace Card_Game_GUI.Card_Game_Controller
 
         public void UIPlayPressed()
         {
+            
             Trace.WriteLine("Players in the game: ");
             foreach (Card_Game.Player Bp in UIGame.players.Values)
             {
+                //UIGame.AddPlayer(Bp);
+                Trace.WriteLine("Dealing two cards to " + Bp.name);
+                UIGame.initial_deal(Bp);
                 Trace.WriteLine(Bp);
             }
         }
@@ -40,6 +44,7 @@ namespace Card_Game_GUI.Card_Game_Controller
         public void UIHitPressed(BlackJackUIPlayer Bp)
         {
             Trace.WriteLine(Bp.player.name + " Pressed Hit!");
+            Trace.WriteLine(Bp.player.hand.ToString());
             this.UIGame.PlayerHit(Bp.player);
         }
 

@@ -47,6 +47,7 @@ namespace Card_Game_GUI.Card_Game_Controller
 
         private void Button_Start_Click(object sender, RoutedEventArgs e)
         {
+            
             if (playerList.Count == 0)
             {
                 string warning = "You need at least one player in the Game!";
@@ -56,6 +57,7 @@ namespace Card_Game_GUI.Card_Game_Controller
             }
             else
             {
+
                 this.game.UIPlayPressed();
             }
 
