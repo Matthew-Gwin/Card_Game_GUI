@@ -62,7 +62,7 @@ namespace Card_Game
                             else {
                                 Console.WriteLine(p.name + " stands.");
                                 p.isPlaying = false;
-                                out_of_round.Add(p.UID, p); //add player to out_of_round
+                                out_of_round.Add(p.UID, p); //add bjplayer to out_of_round
                                 break;
                             }
                      }
@@ -79,7 +79,7 @@ namespace Card_Game
         {
             if (p.hand.cards.Count == 0)
             {
-                for (int dealcount = 1; dealcount <= 2; dealcount++) //deal two cards to each player
+                for (int dealcount = 1; dealcount <= 2; dealcount++) //deal two cards to each bjplayer
                 {
                     p.hand.AddTo(gamecards.Deal());
                 }
@@ -115,7 +115,7 @@ namespace Card_Game
             }
         }
 
-        public bool CheckPlayerStatus(Player p) //returns true if a player has blackjack or busts (no longer playing in the round)
+        public bool CheckPlayerStatus(Player p) //returns true if a bjplayer has blackjack or busts (no longer playing in the round)
         {
             //Console.WriteLine("CheckPlayerStatus enter");
             bool result = false;

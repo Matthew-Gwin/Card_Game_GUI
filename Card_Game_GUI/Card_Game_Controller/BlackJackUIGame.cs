@@ -10,13 +10,13 @@ namespace Card_Game_GUI.Card_Game_Controller
 {
     internal class BlackJackUIGame 
     {
-        public List<BlackJackUIPlayer> BpPlayers { get; set; }
+        public List<BlackJackUIPlayer> bjplayers { get; set; }
         public Card_Game.BlackJack UIGame { get; set; }
 
         public BlackJackUIGame(BlackJack game)
         {
             this.UIGame = game;
-            this.BpPlayers = new List<BlackJackUIPlayer>();
+            this.bjplayers = new List<BlackJackUIPlayer>();
         }
 
 
@@ -34,18 +34,18 @@ namespace Card_Game_GUI.Card_Game_Controller
         }
         public void UILeavePressed(BlackJackUIPlayer Bp)
         {
-      
+            Trace.WriteLine(Bp.player.name + " left the game.");
         }
         public void RemovePlayerFromGame(BlackJackUIPlayer Bp)
         {
-            this.BpPlayers.Remove(Bp);
+            this.bjplayers.Remove(Bp);
         }
 
         public void UIHitPressed(BlackJackUIPlayer Bp)
         {
-            Trace.WriteLine(Bp.player.name + " Pressed Hit!");
-            Trace.WriteLine(Bp.player.hand.ToString());
+            Trace.WriteLine(Bp.player.name + " Pressed Hit! Deck: " + Bp.player.hand + " Score: " + Bp.player.hand.Score());
             this.UIGame.PlayerHit(Bp.player);
+            //Trace.WriteLine(Bp.player.hand.ToString());
         }
 
         public void UIStandPressed(BlackJackUIPlayer Bp)
@@ -56,8 +56,12 @@ namespace Card_Game_GUI.Card_Game_Controller
 
         public void UIAddBpPlayer(BlackJackUIPlayer Bp)
         {
-            this.BpPlayers.Add(Bp);
+            this.bjplayers.Add(Bp);
             this.UIGame.AddPlayer(Bp.player);
+        }
+        public override string ToString()
+        {
+            return String.Join(",", bjplayers);
         }
     }
 }

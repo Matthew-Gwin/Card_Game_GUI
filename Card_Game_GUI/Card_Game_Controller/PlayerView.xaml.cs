@@ -23,14 +23,14 @@ namespace Card_Game_GUI.Card_Game_Controller
     public partial class PlayerViewWindow : Window
     {
         public string name;
-        internal BlackJackUIPlayer player;
+        internal BlackJackUIPlayer bjplayer;
         internal BlackJackUIGame UIGame;
-        //internal Card_Game.BlackJack game; //game player is part of
+        //internal Card_Game.BlackJack game; //game bjplayer is part of
         internal PlayerViewWindow(BlackJackUIPlayer Bp, BlackJackUIGame g)
         {
             InitializeComponent();
             this.UIGame = g;
-            this.player = Bp;
+            this.bjplayer = Bp;
             this.Title = Bp.player.name;
             this.Hand.IsEnabled = false;
             this.Score.IsEnabled = false;
@@ -42,19 +42,22 @@ namespace Card_Game_GUI.Card_Game_Controller
 
         private void GameHit(object sender, RoutedEventArgs e)
         {
-            UIGame.UIHitPressed(player);
+            UIGame.UIHitPressed(bjplayer);
+            this.Score.Text = bjplayer.player.hand.Score().ToString();
+            this.Hand.Text = bjplayer.player.hand.ToString();
         }
 
         private void GameStand(object sender, RoutedEventArgs e)
         { 
-            UIGame.UIStandPressed(player);
+            UIGame.UIStandPressed(bjplayer);
         }
 
         private void GameLeave(object sender, RoutedEventArgs e)
         {
-            //UIGame.BpPlayers
-            //UIGame.players.Remove(player.UID);
-            UIGame.RemovePlayerFromGame(player);
+            //UIGame.bjplayers
+            //UIGame.players.Remove(bjplayer.UID);
+            UIGame.UILeavePressed(bjplayer);
+            ///UIGame.RemovePlayerFromGame(bjplayer);
             this.Close();
         }
 

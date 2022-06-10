@@ -10,7 +10,7 @@ namespace Card_Game
         public int UID { get; set; }
         public bool isPlaying { get; set; }
         public Hand hand { get; set; }
-        public Game game { get; set; } //game that the player is part of 
+        public Game game { get; set; } //game that the bjplayer is part of 
         
         public Player(string playerName)
         {

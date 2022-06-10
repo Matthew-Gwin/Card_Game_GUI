@@ -50,21 +50,22 @@ namespace Card_Game_GUI.Card_Game_Controller
             
             if (playerList.Count == 0)
             {
-                string warning = "You need at least one player in the Game!";
+                string warning = "You need at least one bjplayer in the Game!";
                 createWarningMsgBox(warning);
                 Trace.WriteLine(warning);
                 return;
             }
-            else
-            {
-
-                this.game.UIPlayPressed();
-            }
+            
 
             foreach (BlackJackUIPlayer Bp in playerList)
             {
-                game.BpPlayers.Add(Bp);
+                //game.bjplayers.Add(Bp);
+                Trace.WriteLine("Adding: " + Bp.player.name + " To the game");
+                game.UIGame.AddPlayer(Bp.player);
+                Trace.WriteLine(game.UIGame.ToString());
+                
             }
+            this.game.UIPlayPressed();
             //Trace.WriteLine(game);
             //BlackJackGameWindow nextStep = new BlackJackGameWindow(game);
             this.Close();
